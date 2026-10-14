@@ -1,7 +1,5 @@
 # DataMan Requirements Register
 
-> Replace all bracketed prompts with your own project evidence and requirements. Delete the prompts before submitting.
-
 ## Project Context
 
 DataMan is a 1977 Texas Instruments handheld math-practice device that is being modernized into a web application. Its primary users are elementary and middle school students, and parents and teachers are secondary users who want to follow student progress. The project addresses the need for students to practice basic arithmetic with immediate feedback, save their work, and practice on their own.
@@ -19,7 +17,14 @@ DataMan is a 1977 Texas Instruments handheld math-practice device that is being 
 
 - **E-04 — Source:** DataMan manual, pp. 4, 21  
   **Evidence:** A timer runs during the activity, and the elapsed time is shown in "ticks" of the Atom Clock with the score.
+- **E-05 — Source:** M2 Elicitation Decision Record
+  **Evidence:** Students want to save their practice work so they do not lose their progress when they leave and return later.
 
+- **E-06 — Source:** M2 Elicitation Decision Record
+  **Evidence:** Adults want clearer and shorter information about what the student is learning and how the student is progressing.
+
+- **E-07 — Source:** M2 Elicitation Decision Record
+  **Evidence:** Students often practice on their own, with a teacher or parent available nearby when support is needed.
 
 
 ## Functional Requirements
@@ -40,9 +45,11 @@ DataMan is a 1977 Texas Instruments handheld math-practice device that is being 
 **Requirement:** The system must let an adult or peer store up to 10 problems and then present them one at a time for the child to answer.  
 **Source/Rationale:** DataMan manual, pp. 4, 21 (Memory Bank). It supports teacher/parent-set practice, and the elapsed-time display in E-04 applies to it.
 
-## Non-Functional Requirements
+### FR-05
+**Requirement:** The system must save a student's practice progress so the student can leave a practice session and return later without losing previously recorded progress.
+**Source/Rationale:** E-05. Students need to save their practice work so they do not lose progress when they leave and return later.
 
-Write at least three non-functional requirements. Each requirement should describe a measurable quality, constraint, or condition the system must satisfy.
+## Non-Functional Requirements
 
 ### NFR-01
 **Requirement:** The system must let a student start and complete a practice session without help from an adult.  
@@ -59,7 +66,7 @@ Write at least three non-functional requirements. Each requirement should descri
 ## Open Questions / Assumptions
 - **Q-01:** Should the modern version keep the 5-minute auto power-off from the 1977 manual (pp. 3, 19)? It saved battery on the handheld, and it is unclear whether a web app needs it.
 - **Q-02:** Should the modern version keep the one- or two-digit operand limit and three-digit answer limit (manual p. 20)? They may only reflect 1977 display hardware.
-
+- **Q-03:** Should the modern version keep the restriction against negative answers from the 1977 product? It may reflect a limitation of the original hardware or software.
 ## Final Quality Check
 
 - [x ] Clear enough for another team member to interpret consistently.

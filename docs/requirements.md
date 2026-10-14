@@ -73,5 +73,5 @@ Write at least three non-functional requirements. Each requirement should descri
 - [x] At least three non-functional requirements are included.
 - [x] Every confirmed requirement has a source/rationale.
 - [x] Open questions and assumptions are separated from confirmed requirements.
-- [ ] The simulation decision record is saved at `docs/decisions/m2-elicitation-decision-record.md`.
-- [ ] This file is saved as `docs/requirements.md`, committed, and synced to GitHub.
+- [x ] The simulation decision record is saved at `docs/decisions/m2-elicitation-decision-record.md`.
+- [x ] This file is saved as `docs/requirements.md`, committed, and synced to GitHub.

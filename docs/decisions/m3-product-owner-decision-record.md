@@ -33,9 +33,7 @@ Capacity dropped from 13 to 10 points. Keyboard accessibility testing revealed t
 Two things changed at once. Capacity fell from 13 to 10 points, and accessibility testing.The second fact changes the status of ST-04. In Round 1 it was a high-value story I chose to include. Now it is a pre-release fix, so it is mandatory and the plan has to be built around it
 
 **Tradeoff accepted:**
-ST-01 
-ST-03 
-ST-04
+I accepted that students can create tasks and recover missed ones in this release, but cannot mark a task complete (ST-02). I gave up part of the planning loop to protect recovery (ST-03), the required accessibility fix (ST-04), and a 2-point buffer. ST-02 is the first story I would bring back
 
 ## Transfer to DataMan
 Before finalizing your DataMan backlog, review whether any item is high value but not ready, depends on unresolved work, consumes disproportionate effort, or should move because it reduces risk or unlocks other work.

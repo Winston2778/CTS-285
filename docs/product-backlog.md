@@ -49,7 +49,7 @@ This backlog uses the current version of `docs/requirements.md`, which includes 
 
 ### US-02 — Second try after a wrong answer
 
-**Requirement ID:** FR-01 (the second-try rule comes from evidence E-02 and is not yet written into FR-01)
+**Requirement ID:** FR-06
 
 **User Story:** As a student, I want a second try after a wrong answer, and to be shown the correct result if my second try is also wrong, so that I can correct my mistake and still learn the answer.
 
@@ -62,7 +62,7 @@ This backlog uses the current version of `docs/requirements.md`, which includes 
 
 **Relative Effort:** S — It adds one repeat step to the flow in US-01 and needs no new screens or data.
 
-**Dependency / Constraint:** Depends on US-01. The second-try rule needs to be written into FR-01 or its own requirement (see Open Questions Carried Forward).
+**Dependency / Constraint:** Depends on US-01. None otherwise; the second-try rule is now written as FR-06.
 
 **Priority:** 2
 
@@ -222,7 +222,6 @@ This backlog uses the current version of `docs/requirements.md`, which includes 
 - **Q-04:** How the system recognizes a student who returns to saved progress is not decided. This one decision blocks US-07 and US-08, and it would also be needed before any adult progress summary (E-06) can be written as a requirement.
 - **Q-05:** Which web browsers and devices must be supported. US-01 does not name a browser list until it is answered.
 - **Q-06:** The pass threshold for observing a student who works without adult help (NFR-01, and the same kind of threshold applies to NFR-03). US-05 and US-06 are marked Refine until it is answered.
-- **Second-try rule (E-02):** It is in the evidence but not in any functional requirement. US-02 traces to FR-01 until a requirement is added.
 - **Timer (E-04):** No requirement covers the elapsed-time display, so it appears only as a note on US-08.
 - **Remainder correctness (FR-02):** It is unclear whether the student must enter the remainder to be marked right, which is why US-03 is marked Refine.
 - **Adult progress information (E-06, triage S4):** Adults want clearer and shorter information about how a student is progressing, but no functional requirement states it, so no story exists. It needs a validated requirement, and it would depend on US-07 for the progress data. Triage moved S4 from Refine to Defer for the same reason.
@@ -235,6 +234,7 @@ This backlog uses the current version of `docs/requirements.md`, which includes 
 - US-01 — Kept as the top priority — Triage record: S1 (immediate answer feedback) stayed Move Forward, and the instructor stakeholder requires it for the first usable release.
 - US-02 — Kept as the second priority — Triage record: S5 (retry after an incorrect response) stayed Move Forward.
 - US-07 — Marked Defer — Triage record: S2 (preserve progress between sessions) moved from Refine to Defer because the account/session approach is not ready.
+- US-02 — Now traces to FR-06 — Added FR-06 to `docs/requirements.md` so the second-try rule from E-02 has its own validated requirement instead of borrowing FR-01.
 - US-08 — Marked Defer, ranked last — Triage record: it faces the same session uncertainty that moved S2 and S4 to Defer.
 - No story for S4 — Triage record: S4 moved from Refine to Defer, and it has evidence (E-06) but no functional requirement.
 - No stories for S3 or S6 — Triage record: both were deferred, and neither traces to a requirement.
@@ -254,7 +254,4 @@ This backlog uses the current version of `docs/requirements.md`, which includes 
 - [x] Each acceptance criterion states a result another person can observe and check.
 - [x] The story blocks follow the Priority Order list.
 - [x] Large or uncertain stories are marked Refine or Defer, not hidden as Move Forward.
-- [x] No story or criterion names a framework, database, or screen layout.
-- [ x] The file path is exactly `docs/product-backlog.md`.
-- x[ ] The file renders correctly on GitHub.
-- [ x] The change is committed with a message that describes it.
+- [x] No story or criterion names a framework, database, or screen layout. - [ x] The file path is exactly `docs/product-backlog.md`. - [x ] The file renders correctly on GitHub.- [ x] The change is committed with a message that describes it.

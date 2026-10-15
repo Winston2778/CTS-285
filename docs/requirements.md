@@ -49,6 +49,9 @@ DataMan is a 1977 Texas Instruments handheld math-practice device that is being 
 **Requirement:** The system must save a student's practice progress so the student can leave a practice session and return later without losing previously recorded progress.  
 **Source/Rationale:** E-05. Students need to save their practice work so they do not lose progress when they leave and return later.
 
+### FR-06
+**Requirement:** The system must give a user a second try after a wrong answer and, if the second answer is also wrong, show the correct result.  
+**Source/Rationale:** E-02. The current product allows a second try after a wrong answer and shows the correct result after a second miss.
 ## Non-Functional Requirements
 
 ### NFR-01

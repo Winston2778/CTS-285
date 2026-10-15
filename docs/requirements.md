@@ -17,15 +17,15 @@ DataMan is a 1977 Texas Instruments handheld math-practice device that is being 
 
 - **E-04 — Source:** DataMan manual, pp. 4, 21  
   **Evidence:** A timer runs during the activity, and the elapsed time is shown in "ticks" of the Atom Clock with the score.
-- **E-05 — Source:** M2 Elicitation Decision Record
+
+- **E-05 — Source:** M2 Elicitation Decision Record  
   **Evidence:** Students want to save their practice work so they do not lose their progress when they leave and return later.
 
-- **E-06 — Source:** M2 Elicitation Decision Record
+- **E-06 — Source:** M2 Elicitation Decision Record  
   **Evidence:** Adults want clearer and shorter information about what the student is learning and how the student is progressing.
 
-- **E-07 — Source:** M2 Elicitation Decision Record
+- **E-07 — Source:** M2 Elicitation Decision Record  
   **Evidence:** Students often practice on their own, with a teacher or parent available nearby when support is needed.
-
 
 ## Functional Requirements
 
@@ -46,7 +46,7 @@ DataMan is a 1977 Texas Instruments handheld math-practice device that is being 
 **Source/Rationale:** DataMan manual, pp. 4, 21 (Memory Bank). It supports teacher/parent-set practice, and the elapsed-time display in E-04 applies to it.
 
 ### FR-05
-**Requirement:** The system must save a student's practice progress so the student can leave a practice session and return later without losing previously recorded progress.
+**Requirement:** The system must save a student's practice progress so the student can leave a practice session and return later without losing previously recorded progress.  
 **Source/Rationale:** E-05. Students need to save their practice work so they do not lose progress when they leave and return later.
 
 ## Non-Functional Requirements
@@ -64,21 +64,26 @@ DataMan is a 1977 Texas Instruments handheld math-practice device that is being 
 **Source/Rationale:** E-07, E-01. A student practicing alone has no adult to explain the activity, and the 1977 product relied on a printed manual (E-01).
 
 ## Open Questions / Assumptions
+
 - **Q-01:** Should the modern version keep the 5-minute auto power-off from the 1977 manual (pp. 3, 19)? It saved battery on the handheld, and it is unclear whether a web app needs it.
 - **Q-02:** Should the modern version keep the one- or two-digit operand limit and three-digit answer limit (manual p. 20)? They may only reflect 1977 display hardware.
 - **Q-03:** Should the modern version keep the restriction against negative answers from the 1977 product? It may reflect a limitation of the original hardware or software.
+- **Q-04:** How will the system recognize a student who returns to saved progress? FR-05 requires saved progress, but the account/session approach has not been decided.
+- **Q-05:** Which web browsers and devices must the system support? (Referenced by NFR-02.)
+- **Q-06:** What pass threshold should observation of a student working without adult help meet? (Referenced by NFR-01, and it would also apply to NFR-03.)
+
 ## Final Quality Check
 
-- [x ] Clear enough for another team member to interpret consistently.
-- [x ] Supported by evidence, a stakeholder need, or a confirmed project constraint.
-- [ x] Testable or verifiable later.
-- [ x] Solution-neutral enough for this stage of the project.
-- [ x] Focused on one main capability or quality.
-- [ x] Classified correctly as functional or non-functional.
+- [x] Clear enough for another team member to interpret consistently.
+- [x] Supported by evidence, a stakeholder need, or a confirmed project constraint.
+- [x] Testable or verifiable later.
+- [x] Solution-neutral enough for this stage of the project.
+- [x] Focused on one main capability or quality.
+- [x] Classified correctly as functional or non-functional.
 
 - [x] At least four functional requirements are included.
 - [x] At least three non-functional requirements are included.
 - [x] Every confirmed requirement has a source/rationale.
 - [x] Open questions and assumptions are separated from confirmed requirements.
-- [x ] The simulation decision record is saved at `docs/decisions/m2-elicitation-decision-record.md`.
-- [x ] This file is saved as `docs/requirements.md`, committed, and synced to GitHub.
+- [x] The simulation decision record is saved at `docs/decisions/m2-elicitation-decision-record.md`.
+- [x] This file is saved as `docs/requirements.md`, committed, and synced to GitHub.
